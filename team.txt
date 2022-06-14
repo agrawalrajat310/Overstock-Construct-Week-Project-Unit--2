@@ -1,5 +1,26 @@
-Rajat --> Leader
-Mehfooz -->Member
-Kaviya -->Member
-vivek -->Member
-vicky -->Member
+
+
+Team Name -->  "Overstock-Construct-Week-Project-Unit-2-MASAI-"
+
+
+Team Members -->
+
+
+1. Rajat Agrawal             -->   Student 1 Task   -->  
+
+2. Mehfooz Khan              -->   Student 2 Task   --> 
+
+3. Kaviya Shenbagamoorthi    -->   Student 3 Task   --> 
+
+4. Vivek Anjan               -->   Student 4 Task   --> 
+
+5. Vicky Kumar               -->   Student 5 Task   --> 
+
+
+
+
+
+
+
+
+
