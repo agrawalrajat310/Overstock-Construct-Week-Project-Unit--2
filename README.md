@@ -5,7 +5,7 @@ We team of 5 members are making Project on "www.overstock.com"  under Construct 
 
 
 
-                                                     "Project Guidelines"
+                                                 "Project Guidelines"
 
 
 # We are building mostly 5 pages :- 
@@ -46,4 +46,6 @@ We team of 5 members are making Project on "www.overstock.com"  under Construct 
 
 
 
+You cann see Sample Projects here likw wha we are making :- 
+https://drive.google.com/drive/folders/1kj6WLvFLo2UrJoYVjU79LqWFyFZ75T1O
 
