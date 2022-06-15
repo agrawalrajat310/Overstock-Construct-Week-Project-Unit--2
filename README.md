@@ -1,13 +1,13 @@
 # Overstock-Construct-Week-Project-Unit--2
 
-We team of 5 members are making Project on "www.overstock.com"  under Construct Week of UNIT - 2 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
+We are a team of 5 members making Project on "www.overstock.com"  under Construct Week of UNIT - 2 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
 
 
 
 
                                                 
                                                 
-                                            #"Project Guidelines"
+                                            " Project Guidelines "
 
 
 # We are building mostly 5 pages :- 
