@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<style>
+  #box1
+  {
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    
+  }
+  #box1>a>img
+  {
+    width: 100%;
+    height: auto;
+  }
+  #box2
+  {
+    width: auto;
+    height: 80px;
+    border: 1px solid white;
+  }
+  #box2>h1
+  {
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+  }
+  #box3
+  {
+    width: 97%;
+    height: 290px;
+    margin-left: 17px;
+    border: 1px solid white;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 10px;
+  }
+  #box3>a{
+    text-decoration: none;
+    color: black;
+  }
+  #box3>a>div
+  {
+  border: 1px solid white;
+  height: 290px;
+  }
+  #box3>a>div>img{
+    width: 100%;
+    height: 220px;
+    border: 1px solid white;
+    background-color: #f8f8f8;
+  }
+  #box3>a>div>img+h2
+  {
+    text-align: center;
+    font-family:  sans-serif;
+    font-size: 16px;
+  }
+  #box4
+  {
+    width: 97%;
+    margin: auto;
+    height: auto;
+    border: 1px solid white;
+    margin-top: 30px;
+    
+  }
+  #box4>a>img
+  {
+    width: 100%;
+    height: auto;
+  }
+  #box5
+  {
+    width: 97%;
+    height: 80px;
+    border: 1px solid white;
+    margin-top: 30px;
+    margin-left: 17px;
+  }
+  #box5>h1
+  {
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+  #box6
+  {
+    width: 97%;
+    height: 600px;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-left: 17px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 10px;
+  }
+  #box6>a{
+    text-decoration: none;
+    color: black;
+  }
+  #box6>a>div
+  {
+  border: 1px solid white;
+  height: 290px;
+  }
+  #box6>a>div>img{
+    width: 100%;
+    height: 220px;
+    border: 1px solid white;
+    background-color: #f8f8f8;
+  }
+  #box6>a>div>img+h2
+  {
+    text-align: center;
+    font-family:  sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+  #box7
+  {
+    width: 97%;
+    height: 470px;
+    margin: auto;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat((1,380px));
+    gap: 10px;
+    position: relative;
+  }
+  #box7>a
+  {
+    text-decoration: none;
+  }
+  #box7>a>div
+  {
+    height: 450px;
+  border: 1px solid white;
+  background-color: #f8f8f8;
+  }
+  #box7>a>div>img
+  {
+    width: 100%;
+    height: 300px;
+    border: 1px white;
+  }
+  #box7>a>div>img+h1
+  {
+   background-color: #f8f8f8;
+   color: black;
+   margin-left: 20px;
+   font-size: 20px;
+  }
+  #box7>a>div>img+h1+p
+  {
+    color: black;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+ .btn1
+  {
+    position: absolute;
+        color: black;
+        background-color: white;
+        top: 150px;
+        left: 0%;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        cursor: pointer;
+  }
+ .btn2
+  {
+    position: absolute;
+        color: black;
+        background-color:white;
+        top: 150px;
+        right: 0%;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        cursor: pointer;
+  }
+  #box8
+  {
+    width: 97%;
+    height: auto;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-left: 17px;
+  }
+  #box8>a>img
+  {
+    width: 100%;
+    height: auto;
+  }
+  #box9
+  {
+    width: 97%;
+    height: 410px;
+    margin: auto;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat((1,380px));
+    gap: 10px;
+  }
+  #box9>a
+  {
+    text-decoration: none;
+  }
+  #box9>a>div
+  {
+    height: 410px;
+  border: 1px solid white;
+  background-color: #f8f8f8;
+  }
+  #box9>a>div>img
+  {
+    width: 100%;
+    height: 300px;
+    border: 1px white solid;
+  }
+  #box9>a>div>img+h1
+  {
+   background-color: #f8f8f8;
+   color: black;
+   text-align: center;
+   font-size: 20px;
+  }
+  #box9>a>div>img+h1+p
+  {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  #box10
+  {
+    margin-top: 50px;
+    margin-left: 17px;
+    width: 97%;
+    height: 330px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat((1,380px));
+    
+  }
+  #box10>a
+  {
+    text-decoration: none;
+  }
+  #box10>a>div
+  {
+    
+    height: 330px;
+    
+  }
+  #box10>a>div>img
+  {
+   width: 100%;
+   height: auto;
+  }
+  #box11
+  {
+    width: 97%;
+    height: 450px;
+    margin: auto;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat((1,380px));
+    gap: 10px;
+  }
+  #box11>a
+  {
+    text-decoration: none;
+  }
+  #box11>a>div
+  {
+    height: 460px;
+  border: 1px solid white;
+  background-color: #f8f8f8;
+  }
+  #box11>a>div>img
+  {
+    width: 100%;
+    height: 350px;
+    border: 1px white solid;
+  }
+  #box11>a>div>img+h1
+  {
+   background-color: #f8f8f8;
+   color: black;
+   margin-left: 15px;
+   font-size: 20px;
+  }
+  #box11>a>div>img+h1+p
+  {
+    color: black;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  #box12
+  {
+    width: 97%;
+    height: 80px;
+    text-align: center;
+    margin-top :25px;
+    margin-left: 17px;
+    border: 1px solid white;
+  }
+  #box12>button>a{
+    color: white;
+    text-decoration: none;
+  }
+  #box12>button
+  {
+    margin-top :25px;
+    padding: 12px 25px 12px 25px;
+    background-color: #2f3337;
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #2f3337;
+    cursor: pointer;
+    }
+    #box13
+    {
+      width: 97%;
+      margin-top: 20px;
+      margin-left: 17px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(4,auto);
+      gap:20px;
+      border: 1px solid white;
+    }
+    #box13>a{
+      text-decoration: none;
+    }
+    #box13>a>div
+    {
+      border: 1px solid white;
+      background-color:  
+#f5f6f7;
+    }
+    #box13>a>div>h2
+    {
+      color:gray;
+      text-align: center;
+    }
+    hr
+    {
+      margin-top: 40px;
+    }
+    #box14
+    {
+      width: 100%;
+      margin-top: 40px;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(1,auto);
+      gap: 10px;
+      border:1px solid #545658;
+      background-color: #545658;
+    }
+    #box14>div
+    {
+      margin-top: 40px;
+      border: 1px solid #545658;
+      background-color: #545658;
+    }
+    #box14>div>p{
+      margin-left: 100px;
+      font-size: 18px;
+      color: white;
+    }
+    ul>a{
+      text-decoration: none;
+    }
+    ul>a>li
+    {
+      list-style-type: none;
+      margin-left: 60px;
+      font-size: 15.6px;
+
+      color: white;
+    }
+    sup
+    {
+      font-size: 10px;
+    }
+  
+
+</style>
+<body>
+    <!--summer red tage image-->
+    <div id="box1">
+       <a href="">
+        <img src="img.PNG"alt="error">
+       </a> 
+    </div>
+    <!--Limited times deals-->
+    <div id="box2">
+      <h1>Limited-Time Deals</h1>
+    </div>
+    <div id="box3">
+      <a href="">
+      <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/05302022_HB_DOMESTIC_1_20_off.svg?imwidth=1920" alt="">
+        <h2>Select Rugs</h2>
+      </div></a>
+      <a href=""><div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/06062022_HB_DOMESTIC_2_pt_3.svg?imwidth=1920" alt="">
+        <h2>Select Living Room <br>Furniture</h2>
+      </div></a>
+      <a href=""><div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/06062022_HB_DOMESTIC_3_pt_3.svg?imwidth=1920" alt="">
+        <h2>Select Dinning Room <br>Furniture</h2>
+      </div></a>
+      <a href=""><div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/06102022_HB_DOMESTIC_6.svg?imwidth=1920" alt="">
+        <h2>Select Lighting & <br> Ceiling Fans</h2>
+      </div></a>
+     <a href=""> <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/06062022_HB_DOMESTIC_5_pt_3.svg?imwidth=1920" alt="">
+        <h2>Select Home Decor</h2>
+      </div></a>
+     <a href=""> <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/05302022_HB_DOMESTIC_6.svg?imwidth=1920" alt="">
+        <h2>Save on Top-Rated <br>Items</h2>
+      </div></a>
+    </div>
+    <!--sumerready beadroom-->
+    <div id="box4">
+      <a href="">
+       <img src="img1.PNG"alt="error">
+      </a> 
+   </div>
+   <!--fresh find each other-->
+   <div id="box5">
+    <h1>Fresh Finds In Each Category</h1>
+   </div>
+   <div id="box6">
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11192021-CatSilo-Furniture.png?imwidth=1920" alt="">
+      <h2>Furniture</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-AreaRugs.png?imwidth=1920" alt="">
+      <h2>Area Rugs</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-BedBath.png?imwidth=1920" alt="">
+      <h2>Bedding</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Decor.png?imwidth=1920" alt="">
+      <h2>Home Decor</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/CatSilo-Window-040721.jpg?imwidth=1920" alt="">
+      <h2>Window Treatments</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Kitchen.png?imwidth=1920" alt="">
+      <h2>Kitchen</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11192021-CatSilo-Outdoor.png?imwidth=1920" alt="">
+      <h2>Outdoor</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/01112021-CatSilo-HomeImp.jpg?imwidth=1920" alt="">
+      <h2>Home Improvement</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Storage.png?imwidth=1920" alt="">
+      <h2>Storage</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/01112021-CatSilo-Mattresses.jpg?imwidth=1920" alt="">
+      <h2>Mattresses</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Lighting.png?imwidth=1920" alt="">
+      <h2>Lighting</h2>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/CatSilo-AllDeals-040721.jpg?imwidth=1920" alt="">
+      <h2>Shop All Deals</h2>
+    </div></a>
+    
+   </div>
+   <!--New Ways to Bring Home Spring-->
+   <div id="box5">
+   <h1>New Ways to Bring Home Spring</h1>
+   </div>
+   <div id="box7">
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_4.jpg?imwidth=1920" alt="">
+      <h1>Leather Sectionals</h1>
+      <p>Update your living Room with the <br>Sumpitious Style & homegrown <br>comfort of leather</p>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_3.jpg?imwidth=1920" alt="">
+      <h1>Wicker Patio Furniture</h1>
+      <p>Save on Long-Lasting comfort with <br>the natural textureof Wicker <br> Furniture</p>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_1.jpg?imwidth=1920" alt="">
+      <h1>Durable Outdoor <br> Rugs</h1>
+      <p>Treat your feet to patio comfort with <br>these resilient Rugs </p>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_2.jpg?imwidth=1920" alt="">
+      <h1>Adirondack Chairs</h1>
+      <p>Refresh your Outdoor seating with <br> this Lawn & patio classic </p>
+    </div></a>
+    <button class="btn1"><</button>
+    <button class="btn2">></button>
+   </div>
+   <div id="box8">
+    <a href=""><img src="img2.PNG" alt=""></a>
+   </div>
+  <!-- -->
+  <div id="box5">
+   <h1>Overstock Featured Brands</h1>
+   </div>
+   <div id="box9">
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_27037529.jpg?imwidth=1920" alt="">
+      <h1>Extra 20% off</h1>
+      <p>Select Rugs by <br>Artistic Weavers & More*</p>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/HP_C_Mod_30806359.jpg?imwidth=1920" alt="">
+      <h1>Save On</h1>
+      <p>Select Furniture By <br>Middlebrook Desgins</p>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_39032511.jpg?imwidth=1920" alt="">
+      <h1>Extra 15% Off</h1>
+      <p>Select Mattresses by <br>Sealy* </p>
+    </div></a>
+    <a href=""><div>
+      <img src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_27417542.jpg?imwidth=1920" alt="">
+      <h1>Save on</h1>
+      <p>Select Home Goods by <br> Bush Furniture </p>
+    </div></a>
+   </div>
+   <!---->
+   <div id="box10">
+    <a href=""><div>
+      <img src="img3.PNG" alt=""></div>
+    </a>
+    
+      <a href=""><div>
+        <img src="img4.PNG" alt=""></div>
+      </a>
+      
+        <a href=""><div>
+          <img src="img5.PNG" alt=""></div>
+        </a>
+   </div>
+   <!--We've Got Your Style-->
+   <div id="box5">
+    <h1>We've Got Your Style</h1>
+   </div>
+   <div id="box11">
+    <a href="">
+      <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/030822-SBS-Farmhouse.jpg?imwidth=1920" alt="">
+        <h1>Farmhouse</h1>
+        <p>Country comfort abound in this fresh take on <br>rustic home decor.</p>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/030822-SBS-MidCenMod.jpg?imwidth=1920" alt="">
+        <h1>Mid-Century Modern</h1>
+        <p>Retro Meets modern chic in these clean line and<br>vibrant tones.</p>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/030822-SBS-Traditional.jpg?imwidth=1920" alt="">
+        <h1>Traditional</h1>
+        <p>Cozy desgins, clean and classic ,give this style it's <br>signature appeal.</p>
+      </div>
+    </a>
+   </div>
+   <div id="box12">
+    <button><a href=""> See all Styles</a></button>
+   </div>
+   <!--Trending Searches-->
+   <div id="box5">
+    <h1>Trending Searches</h1>
+   </div>
+   <div id="box13">
+    <a href="">
+      <div>
+        <h2>Outdoor Rugs</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Wallpaper</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Patio Furniture</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Mattresses</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Tv Stands</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Outdoor Lighting</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Outdoor Dinning Sets</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Mirrors</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Protable Air Conditioners</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Bathroom Vanities</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Computer Desks</h2>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h2>Area Rugs</h2>
+      </div>
+    </a>
+   </div>
+   <hr>
+   <div id="box14">
+    <div>
+      <p>MY ACCOUNT</p>
+       <ul>
+        <a href=""><li>Oder & Returns</li></a><br>
+        <a href=""><li>Email Prefrence</li></a><br>
+       <a href=""> <li>Account Settings</li></a>
+       </ul>
+      </div>
+    <div>
+      <p>LET US HELP</p>
+      <ul>
+       <a href=""><li>Contact Customer Care</li></a><br>
+       <a href=""><li>Shipping Information</li></a><br>
+      <a href=""> <li>Return Policy</li></a><br>
+      <a href=""> <li>International Help</li></a><br>
+      <a href=""> <li>Accessibility</li></a>
+
+      </ul>
+    </div>
+    <div>
+      <p >COMPANY INFORMATION</p>
+      <ul>
+       <a href=""><li>About Overstock <sup>TM</sup></li></a><br>
+       <a href=""><li>Contact Us</li></a><br>
+      <a href=""> <li>Careers</li></a><br>
+      <a href=""> <li>Investor Relation</li></a><br>
+      <a href=""> <li>Sell Your Products</li></a><br>
+      <a href=""> <li>Supply Chain Transperancy</li></a>
+
+      </ul>
+    </div>
+    <div>
+      <p >MORE WAYS TO SHOP</p>
+      <ul>
+       <a href=""><li>Tips & Ideas</li></a><br>
+       <a href=""><li>Deals</li></a><br>
+      <a href=""> <li>Clerance</li></a><br>
+      <a href=""> <li>New Arrivals</li></a><br>
+      
+
+      </ul>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+  let img=document.querySelector("#box7>a>div");
+  let btn1=document.querySelector(".btn1");
+  let btn2=document.querySelector(".btn2");
+  let imgnum=0;
+  let imgArry=[
+ "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider1.png",
+
+"https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider2.png",
+
+"https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider3.png",
+  ]
+btn1.addEventListener("click", function()
+
+{
+ 
+if(imgnum===0)
+{
+  imgnum=imgArry.length-1;
+}
+else
+{
+  imgnum--;
+}
+img.setAttribute("src",imgArry[imgnum]);
+})
+
+
+
+btn2.addEventListener("click", function()
+{
+  
+if(imgnum==imgArry.length-1)
+{
+  imgnum=0;
+}
+else
+{
+  imgnum++;
+}
+img.setAttribute("src",imgArry[imgnum]);
+})
+  
+
+
+
+
+</script>
