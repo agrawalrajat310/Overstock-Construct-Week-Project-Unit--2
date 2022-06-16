@@ -52,3 +52,11 @@ We are a team of 5 members making Project on "www.overstock.com"  under Construc
  
 https://drive.google.com/drive/folders/1kj6WLvFLo2UrJoYVjU79LqWFyFZ75T1O
 
+
+
+# For Feedback :- 
+
+
+We all our building this kind of project for the first time. If you see anything for feedback, please come forward and tell us. We will surely work upon that.
+
+   #                                             Thank You :)
