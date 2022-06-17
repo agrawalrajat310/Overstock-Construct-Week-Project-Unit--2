@@ -7,7 +7,7 @@ We are a team of 5 members making Project on "www.overstock.com"  under Construc
 
                                                 
                                                 
-                                                    " About Project "
+                                                 " About Project "
 
 
 # We are building mostly 5 pages :- 
