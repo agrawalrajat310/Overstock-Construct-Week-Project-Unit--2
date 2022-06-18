@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,143 @@
     <title>Product Page</title>
 
     <style>
-        
+        #container {
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+            height: 600px;
+            display: flex;
+        }
+
+        #container>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 50%;
+            margin-right: 15px;
+        }
+
+        #container>div:nth-child(2) {
+            /* border: 1px solid; */
+            width: 50%;
+            font-size: 20px;
+        }
+
+        #container>div:nth-child(2)>h3 {
+            color: #c72054;
+        }
+
+        #container>div:nth-child(2)>h3+p {
+            font-weight: bold;
+        }
+
+        .smalldiv {
+            display: flex;
+        }
+
+        .smalldiv>div {
+            margin-right: 26px;
+        }
+
+        #quantity {
+            margin-left: 15px;
+            margin-top: 180px;
+            /* padding: 10px; */
+            width: 155px;
+        }
+
+        .cart {
+            display: flex;
+        }
+
+        .cart>div {
+            width: 40%;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid;
+            padding: 5px;
+            margin-left: 80px;
+            margin-top: 180px;
+            text-align: center;
+            background-color: green;
+        }
     </style>
 </head>
+
 <body>
-    
+    <div id="container">
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/61fde5d2873c660fa58ab20c954084f57c92bac8/Glitzhome-iron--Pine-19-inch-Farmhouse-Storage-End-Table-%28Set-of-2%29.jpg"
+                alt="error">
+        </div>
+
+
+        <div>
+            <p>Glitzhome iron/Pine 19-inch Farmhouse Nesting Side End Table with Storage (Set of 2) <br> by <a
+                    href="https://www.overstock.com/Glitzhome,/brand,/results.html">Glitzhome</a></p>
+            <h3>Sale Starts at INR 7385.35</h3>
+            <p>Color (8): Choose Color</p>
+
+            <div class="smalldiv">
+                <div>
+                    <img src="https://ak1.ostkcdn.com/images/products//is/images/direct/82a3335ce5867c0672e3ad3b536a810c381bd91c/Glitzhome-19%22H-Farmhouse-Metal-Accent-Table-Storage-Stool-Set-of-2.jpg"
+                        alt="error">
+                </div>
+
+                <div>
+                    <img src="https://ak1.ostkcdn.com/images/products//is/images/direct/78445bd00349e3d016f697bff503ea6030519f0d/Glitzhome-19%22H-Farmhouse-Rustic-Galvanized-Enameled-Metal-Storage-Stool-Set-of-2.jpg"
+                        alt="error">
+                </div>
+
+                <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/ca5d6acea72dac1b0784c02176f70589f25f04b9/Glitzhome-19%22H-Farmhouse-Metal-Accent-Table-Storage-Stool-Set-of-2.jpg"
+                        alt="error">
+                </div>
+
+                <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/96ef233b623d6dc8a2ea5f2afec183a238a3bab5/Glitzhome-iron--Pine-19-inch-Farmhouse-Storage-End-Table-%28Set-of-2%29.jpg"
+                        alt="error">
+                </div>
+
+                <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/9a54722027fc603b4d28b6ec3be0056205eb216b/Glitzhome-iron--Pine-19-inch-Farmhouse-Storage-End-Table-%28Set-of-2%29.jpg"
+                        alt="error">
+                </div>
+
+                <div>
+                    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/58277dcc9781c1074f1a28eed8e06bbfd6210684/Glitzhome-iron--Pine-19-inch-Farmhouse-Storage-End-Table-%28Set-of-2%29.jpg"
+                        alt="error">
+                </div>
+
+            </div>
+
+            <div class="cart">
+
+                <select name="quantity" id="quantity">
+                    <option value="1">Quantity: 1</option>
+                    <option value="1">Quantity: 2</option>
+                    <option value="1">Quantity: 3</option>
+                    <option value="1">Quantity: 4</option>
+                    <option value="1">Quantity: 5</option>
+                    <option value="1">Quantity: 6</option>
+                    <option value="1">Quantity: 7</option>
+                    <option value="1">Quantity: 8</option>
+                    <option value="1">Quantity: 9</option>
+                    <option value="1">Quantity: 10</option>
+                    <option value="1">Quantity: 11</option>
+                    <option value="1">Quantity: 12</option>
+                    <option value="1">Quantity: 13</option>
+                    <option value="1">Quantity: 14</option>
+                    <option value="1">Quantity: 15</option>
+                    <option value="1">Quantity: 16</option>
+                    <option value="1">Quantity: 17</option>
+                </select>
+
+                <div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
