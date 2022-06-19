@@ -1,6 +1,6 @@
 # Overstock-Construct-Week-Project-Unit -> 2
 
-We both are making Project on "www.overstock.com"  under Construct Week of UNIT - 2 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
+Me & Mehfooz are making Project on "www.overstock.com"  under Construct Week of UNIT - 2 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
 
 
 
