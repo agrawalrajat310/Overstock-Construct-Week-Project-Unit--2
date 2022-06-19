@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    #line {
+      display: flex;
+      width: 100%;
+      height: 20px;
+      padding: 10px;
+      font-size: 20px;
+      background-color: whitesmoke;
+      box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.075);
+      border: none;
+    }
+
+    #search {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.075);
+      flex-direction: row;
+      color: black;
+      gap: 10px;
+      margin: 0%;
+      /* border: 1px solid grey; */
+    }
+
+    #navbar {
+      width: 100%;
+      height: 50px;
+      margin-right: 0%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: (repeat(1, 1fr));
+      box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.075);
+      color: black;
+      /* border: 1px solid grey; */
+      cursor: pointer;
+    }
+
+    #line img {
+      width: 20px;
+      height: 20px;
+    }
+
+    #search>div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: auto;
+      justify-content: center;
+    }
+
+    #search>div>img {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .logo {
+      display: flex;
+    }
+
+    .logo>div {
+      display: flex;
+      flex-direction: row;
+      font-size: 40px;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    .logo>div>img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .slogo {
+      width: 1500px;
+      min-height: 50px;
+      display: flex;
+      flex-direction: row;
+      padding: 20px 0px 20px 0px;
+    }
+
+    .search-bar {
+      width: 100%px;
+      min-width: 500px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.2);
+      display: flex;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      align-items: center;
+      box-shadow: inset 1px 1px 5px 5px rgba(0, 0, 0, 0.075);
+      /* border: 1px solid grey; */
+    }
+
+    .search-bar input {
+      background: transparent;
+      flex: 1;
+      border: 0;
+      outline: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .search-bar button img {
+      width: 20px;
+      height: 25px;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .search-bar button {
+      border-radius: 3px;
+      margin-top: 0%;
+      width: 30px;
+      height: 30px;
+      background: rgb(245, 7, 7);
+      cursor: pointer;
+    }
+
+    #footer {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      margin: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: black;
+      color: white;
+      padding-left: 40px;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+
+    #footer img {
+      width: 20px;
+      height: 20px;
+      padding: 20px 0px;
+    }
+
+    #footer>div {
+      display: flex;
+      width: 660px;
+      height: auto;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    button {
+      border: none;
+      width: 125px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .copy>div {
+      display: flex;
+      width: 145px;
+      height: 70px;
+      color: white;
+      margin-left: 0%;
+      flex-direction: row;
+    }
+
+    .copy img {
+      width: 20px;
+      height: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+    }
+
+    .copy button {
+      width: 50px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    .copy>div>div {
+      display: flex;
+      flex-direction: column;
+      justify-items: end;
+      margin: auto;
+    }
+
+    #line button {
+      width: 80px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      background-color: whitesmoke;
+      gap: 10px;
+      padding-left: 10px;
+      font-size: 15px;
+    }
+
+    .checkbtn {
+      font-size: 30px;
+      color: black;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+    }
+
+    #check {
+      display: none;
+    }
+
+    nav {
+      display: none;
+    }
+
+    @media all and (min-width: 480px) and (max-width:720px) {
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+
+      .checkbtn {
+        font-size: 30px;
+        color: black;
+        float: right;
+        line-height: 80px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      label.logo {
+        color: white;
+        width: 30px;
+        height: 30px;
+        padding-top: 30px;
+      }
+
+      nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        box-shadow: 1px 1px 1px 1px gray;
+      }
+
+      #navbar {
+        display: none;
+      }
+
+      #line {
+        display: none;
+      }
+
+      #footer {
+        display: none;
+      }
+
+      #search {
+        display: none;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      .bar {
+        width: 100%;
+        height: 30px;
+        box-shadow: 1px 1px 1px 1px gray;
+        display: flex;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      .bar input {
+        width: 100%;
+        height: auto;
+        border: none;
+
+      }
+
+      .slogo {
+        width: 500px;
+        min-height: 50px;
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0px 20px 0px;
+      }
+
+      .img {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .img>div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* border: 1px red; */
+        padding-left: 10px;
+      }
+
+    }
+
+    @media all and (min-width: 100px) and (max-width:480px) {
+      * {
+        margin: 0%;
+        padding: 0px;
+      }
+
+      .checkbtn {
+        font-size: 30px;
+        color: black;
+        float: right;
+        line-height: 50px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      label.logo {
+        color: white;
+        width: 30px;
+        height: 30px;
+        padding-top: 20px;
+      }
+
+      nav {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        box-shadow: 1px 1px 1px 1px gray;
+      }
+
+      #navbar {
+        display: none;
+      }
+
+      #line {
+        display: none;
+      }
+
+      #footer {
+        display: none;
+      }
+
+      #search {
+        display: none;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      .bar {
+        width: 100%;
+        height: 30px;
+        box-shadow: 1px 1px 1px 1px gray;
+        display: flex;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        border: 1px solid;
+
+      }
+
+      .bar input {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      .slogo {
+        width: 300px;
+        min-height: 40px;
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0px 20px 0px;
+        margin-bottom: 20px;
+      }
+
+      .img {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .img>div {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px red; */
+        padding-left: 10px;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas">=</i></label>
+      <label class="logo"><img src="5th.jpg" alrt="error" /></label>
+      <div class="slogo">
+        <form action="www.Overstock.com" class="bar">
+          <input type="text" placeholder="search" name="q">
+          <button style="width:30px; height: 30px ;background-color: red;" type="submit" class="photo">
+            <img style="width:20px; height: 20px;" src="4thf.jpg" alt="error">
+          </button>
+        </form>
+      </div>
+      <div class="img">
+        <div>
+          <img style="width:20px; height: 20px;float: left;" src="1st.jpg" alt="error">
+          <a href="index.html" target="_blank"><button
+              style="width:20px; height: 20px;float: left;"><b>Lists</b></button></a>
+        </div>
+        <div>
+          <img style="width:20px; height: 20px ;float: left;" src="2nd.jpg" alt="error">
+          <a href=""><button style="width:20px; height: 20px;float:left;"><b> Cart</b></button></a>
+        </div>
+      </div>
+    </nav>
+    <div id="line">
+      Ships to : <a href="index1.html"><button><img src="3rd.jpg" alt="error"> <b>INDIA</b></button></a>
+    </div>
+    <div id="search">
+      <div class="logo">
+        <div>
+          <img src="5th.jpg" alrt="error" />
+          <p>Overstock</p>
+        </div>
+      </div>
+      <div class="slogo">
+        <form action="" class="search-bar">
+          <input type="text" placeholder="search" name="q">
+          <button type="submit">
+            <img src="4thf.jpg" alt="error">
+          </button>
+        </form>
+      </div>
+      <div class="copy">
+        <div>
+          <div>
+            <img src="6th.jpg" alrt="error" />
+            <a href=""><button> <b>Account</b></button></a>
+          </div>
+          <div>
+            <img src="1st.jpg" alt="error">
+            <a href="index.html" target="_blank"><button><b>Lists</b></button></a>
+          </div>
+          <div>
+            <img src="2nd.jpg" alt="error">
+            <a href=""><button><b> Cart</b></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="navbar">
+      <a href="index.html"><button>Furniture</button></a>
+      <a href=""><button>Rugs</button></a>
+      <a href=""><button>Decor</button></a>
+      <a href=""><button>Bedding</button></a>
+      <a href=""><button>HomeImprovement</button></a>
+      <a href=""><button>Kitchen</button></a>
+      <a href=""><button>Outdoor</button></a>
+      <a href=""><button>Lighting</button></a>
+      <a href=""><button>Kids & Baby</button></a>
+      <a href=""><button>More</button></a>
+      <a href=""><button>Ideas</button></a>
+      <a href=""><button style="color: red;">Sales& Deals</button></a>
+    </div>
+    <br>
+  </header>
+  <footer>
+    <div id="footer">
+      <p> &copy; Copyright 2022, Overstock.com &#174;, Inc.<br>
+        799 Coliseum Way Midvale, UT84047 | 1-800-843-2446</p>
+      <div>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+        <p>*Promotion Terms</p>
+        <p>Ships to:</p>
+        <img src="3rd.jpg" alt="error">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
