@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories of Products</title>
+    <style>
+        #head1 {
+            margin-left: 30px;
+            padding-top: 15px;
+        }
+
+        #head2 {
+            margin-left: 150px;
+            margin-top: 40px;
+        }
+
+        #header {
+            /* border: 1px solid red; */
+            /* height: 500px;
+            width: 100%; */
+            display: flex;
+            margin-top: 35px;
+        }
+
+        #header>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 20%;
+            margin-left: 30px;
+        }
+
+        #header>div:nth-child(1)>p {
+            padding: 5%;
+            margin-left: 20px;
+            /* color: black; */
+        }
+
+        #header>div:nth-child(2) {
+            /* border: 1px solid teal; */
+            width: 70%;
+            margin-left: 10%;
+            display: block;
+        }
+
+        #subheader>div:first-child {
+            /* border: 1px solid green; */
+            width: 96%;
+            /* height: 20%; */
+            /* margin: auto; */
+            background-color: rgb(240, 122, 136);
+            text-align: center;
+            font-style: italic;
+            line-height: 25px;
+        }
+
+        #subheader>div:last-child {
+            /* border: 1px solid black; */
+            width: 96%;
+            margin-top: 4%;
+            /* height: 80%; */
+            /* background-image: url(//ak1.ostkcdn.com/img/mxc/12202021_2022Winter_LRFurn_AMOD.jpg?imwidth=1200&amp;impolicy=custom); */
+        }
+
+        #subheader>div:last-child>img {
+            width: 100%;
+            /* padding-right: 00px; */
+        }
+
+        #head3 {
+            /* border: 1px solid red; */
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            margin-top: 90px;
+        }
+
+        #medium {
+            /* border: 1px solid teal; */
+            margin-top: 30px;
+            display: flex;
+        }
+
+        #medium>div {
+            /* border: 1px solid red; */
+            width: 15%;
+            margin-right: 2%;
+            /* padding-bottom: 5px; */
+        }
+
+        #medium>div>img {
+            width: 100%;
+        }
+
+        /* #medium > div > img > p:first-child {
+    background-color: maroon;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    padding: 2px 10px;
+} */
+
+        #medium>div>p:last-child {
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+        /* PRODUCTS CSS  */
+
+
+        #products {
+            /* border: 1px solid green; */
+            display: flex;
+            /* margin: auto; */
+            margin-top: 70px;
+            width: 100%;
+            height: 500px;
+        }
+
+        #products1 {
+            /* border: 1px solid red; */
+            width: 33%;
+            margin-right: 2.1%;
+            display: block;
+        }
+
+        #products1>div>img {
+            /* border: 1px solid yellow; */
+            width: 99%;
+            height: 100%;
+        }
+
+        #products1>div:nth-child(1) {
+            width: 100%;
+            height: 70%;
+        }
+
+        #products1>div:nth-child(2) {
+            /* border: 1px solid seagreen; */
+            width: 100%;
+            height: 29%;
+        }
+
+
+        #products2 {
+            display: flex;
+        }
+
+        #products2>div:nth-child(1) {
+            /* border: 1px solid teal; */
+            margin-left: 20px;
+        }
+
+        #products2>div:nth-child(1)>h3 {
+            color: #c72054;
+        }
+
+        #products2>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 30%;
+            text-align: center;
+        }
+
+        #products2>div:nth-child(2)>p {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head1">
+        <p>Furniture / Living Room Furniture</p>
+    </div>
+
+    <div id="head2">
+        <h1>Living Room Furniture</h1>
+    </div>
+
+    <div id="header">
+        <div>
+            <p>
+                <a href="https://www.overstock.com/Home-Garden/Sofas-Loveseats/2027/subcat.html">Sofas & Couches</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/Home-Garden/Sectional-Sofas/18553/subcat.html">Sectional Sofas</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/Home-Garden/Coffee-Sofa-End-Tables/2030/subcat.html">Coffee, Sofa &
+                    End Tables</a>
+            </p>
+            <p>
+                <a
+                    href="https://www.overstock.com/Home-Garden/Living-Room-Chairs/Accent-Chairs,/chair-type,/2737/subcat.html">Accent
+                    Chairs</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/Home-Garden/Living-Room-Sets/18554/subcat.html">Living Room Sets</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/Home-Garden/Entertainment-Centers/2029/subcat.html">TV Stands</a>
+            </p>
+            <p>
+                <a href="https://www.overstock.com/Home-Garden/Living-Room-Furniture/On-Sale,/sale,/713/cat.html">Shop
+                    All Living Room <br />
+                    Furniture on Sale</a>
+            </p>
+        </div>
+
+        <div id="subheader">
+            <div>
+                <p>
+                    Experience the future of shopping!<br />
+                    <a href="https://showroom.overstock.com/">Try the Virtual Showroom (Beta)</a>
+                </p>
+            </div>
+
+            <div>
+                <img src="https://ak1.ostkcdn.com/img/mxc/12202021_2022Winter_LRFurn_AMOD.jpg?imwidth=1200&amp;impolicy=custom"
+                    alt="img error" />
+            </div>
+        </div>
+    </div>
+
+    <!-- SHOP BY CATEGORY -->
+
+    <div id="head3">
+        <h1>Shop by Category</h1>
+    </div>
+
+    <div id="medium">
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/da8e341a52b0b4168f5531527177130eec875ca8/Carson-Carrington-Odhult-Tufted-Contemporary-Tuxedo-Sofa.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Sofas & Couches</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/22341232/Candace-Mid-Century-Modern-Fabric-Arm-Chair-and-Loveseat-Set-by-Christopher-Knight-Home-087d71b4-c7d8-4352-b7f5-ac19c5a60ce2_1000.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Living Room Sets</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/24151999/Welles-Mid-Century-2-Piece-Chaise-Sectional-Sofa-Set-With-Tufted-by-Christopher-Knight-Home-62f39e28-0a20-4594-8815-be5fb283c2b1_1000.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Sectional Sofass</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/cc3e23e59b0b7275ff6cb732d7c2d7f6f18df9e9/The-Grey-Barn-70%22-Rustic-Fireplace-TV-Stand-Console.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>TV Stands & Entertainment Centers</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/2c822047c6482dd072478dac0a517f7fd4ba74f2/Berwick-Metal-and-Wood-Nesting-Basket-Tables.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Console, Coffee & End Tables</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/f7e4607f8a2129ab4b1ab22cd1769a61b681c3db/Abbyson-Holloway-Mid-century-Top-Grain-Leather-Pushback-Recliner.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Recliner Chairs & Rocking Recliners</p>
+        </div>
+    </div>
+
+    <!-- TOP TRENDING -->
+
+    <div id="head3">
+        <h1>Top Trending</h1>
+    </div>
+
+    <div id="medium">
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/dfd768dd6f5ec2fc877af8695096a5ff4e9942e4/Copper-Grove-Dhi-Upholstered-Armchair.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Living Room Chairs</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/14741699/Christopher-Knight-Home-Yuny-Round-Fabric-Ottoman-Pouf-43157217-9e91-49f5-9440-a293f5a47a18_1000.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Ottoman & Storage Ottomans</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/a32ab49e9155e1abe7a5903331149853a3e02c18/Carson-Carrington-Hedeby-Upholstered-Fabric-Loveseat.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Loveseats</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/0485073b17812f0a60e7686583f28e805f0aeac8/Ramses-Modern-Grey-Bookcase-Display-Cabinet.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Bookshelves & Bookcases</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/b6158f17126c52bc350f84c94db20fa716543fce/Abbyson-Carson-Mid-century-Tufted-Convertible-Futon-Sleeper-Sofa.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Futons</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/bf33b0970649fedab76cbe0913b1911ddc4ea7f6/Morgan-Creek-Antique-White-Storage-Hall-Bench.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Benches & Settees</p>
+        </div>
+    </div>
+
+    <!-- SHOP OUR STYLE -->
+
+    <div id="head3">
+        <h1>Shop Our Style</h1>
+    </div>
+
+    <div id="medium">
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD1_ModernandContemporaryLivingRoomFurniture.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Modern & Contemporary Living Room Furniture</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD2_RusticLivingRoomFurniture.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Rustic Living Room Furniture</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD3_FarmhouseLivingRoomFurniture.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Farmhouse Living Room Furniture</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD4_TraditionalLivingRoomFurniture.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Traditional Living Room Furniture</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD5_MidCenturyModernLivingRoomFurniture.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Mid-Century Modern Living Room Furniture</p>
+        </div>
+
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD6_NauticalandCoastalLivingRoomFurniture.jpg?imWidth=320&impolicy=medium"
+                alt="img error" />
+            <!-- <p>Sale</p> -->
+            <p>Nautical & Coastal Living Room Furniture</p>
+        </div>
+    </div>
+
+    <!-- Product Menu -->
+
+    <div id="head3">
+        <h1>Products</h1>
+    </div>
+
+
+    <div id="products">
+
+        <div id="products1">
+            <div>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/1d855dd3a0f00089f211bb43c8d511b1239ed82d/Middlebrook-30-inch-Rustic-Barn-Door-Accent-Cabinet.jpg?imwidth=480&impolicy=medium"
+                    alt="img error">
+            </div>
+            <div id="products2">
+                <div>
+                    <h3>INR 19509.39</h3>
+                    <p>Middlebrook 30-inch Rustic Barn Door Accent Cabinet</p>
+                </div>
+                <div>
+                    <p><button><a href="product_page.html"></a> Details > </button></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="products1">
+            <div>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/61fde5d2873c660fa58ab20c954084f57c92bac8/Glitzhome-iron--Pine-19-inch-Farmhouse-Storage-End-Table-%28Set-of-2%29.jpg?imwidth=480&impolicy=medium"
+                    alt="img error">
+            </div>
+            <div id="products2">
+                <div>
+                    <h3>Sale Starts at INR 9378.07</h3>
+                    <p>Glitzhome Iron/ Pine 19-inch Farmhouse Nesting Side End Table With Storage (Set of 2)</p>
+                </div>
+                <div>
+                    <p>Details > </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="products1">
+            <div>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/e62c5f858340a249a2da1ee50b872dc496393358/Kaylee-Spindle-Chair-in-Fabric-with-White-Frame.jpg?imwidth=480&impolicy=medium"
+                    alt="img error">
+            </div>
+            <div id="products2">
+                <div>
+                    <h3>Sale INR 26070.83</h3>
+                    <p>Kaylee Spindle Chair In Fabric with White Frame</p>
+                </div>
+                <div>
+                    <p>Details > </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="products">
+
+        <div id="products1">
+            <div>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/47c9ae93df558cc6a7214693e20c3b81a9dd4523/Futzca-Convertible-Sectional-Sofa-Couch-with-Reversible-Chaise%2C-Modern-Linen-Fabric-L-Shaped-Couch-for-Small-Space.jpg?imwidth=480&impolicy=medium"
+                    alt="img error">
+            </div>
+            <div id="products2">
+                <div>
+                    <h3>INR 43144.09</h3>
+                    <p>Futzca Modern L-shaped Compact Convertible Sectional Sofa w/ Reversible Chaise</p>
+                </div>
+                <div>
+                    <p>Details > </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="products1">
+            <div>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/08b80a67acf1c5ff748b98e4c070d2f09c789764/Carson-Carrington-Telsiai-Triangle-Wood-Coffee-Table.jpg?imwidth=480&impolicy=medium"
+                    alt="img error">
+            </div>
+            <div id="products2">
+                <div>
+                    <h3>Sale Starts at INR 15099.07</h3>
+                    <p> Carson Carrington Telsiai Triangular Wood Coffee Table</p>
+                </div>
+                <div>
+                    <p>Details > </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="products1">
+            <div>
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/27ea8525802c460d8ae1dbd42a7f2debe3b922bd/COZAYH-2-Piece-Coffee-Table-Set.jpg?imwidth=480&impolicy=medium"
+                    alt="img error">
+            </div>
+            <div id="products2">
+                <div>
+                    <h3>Sale INR 24226.83</h3>
+                    <p>COZAYH 2-Piece Coffee Table Set</p>
+                </div>
+                <div>
+                    <p>Details > </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg" alt data-index="1" class="star" style="width: calc(15.4px);"> -->
